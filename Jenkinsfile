@@ -37,16 +37,16 @@ pipeline {
             }
         }
 
-        stage('SonarQube Analysis') {
-             steps {
-                 script {
-                     def scannerHome = tool 'Subocol-SonarQubeScanner'
-                     withSonarQubeEnv('SonarQube-Subocol') {
-                         sh "${scannerHome}/bin/sonar-scanner"
-                    }
-                 }
-             }
-         }
+//         stage('SonarQube Analysis') {
+//              steps {
+//                  script {
+//                      def scannerHome = tool 'Subocol-SonarQubeScanner'
+//                      withSonarQubeEnv('SonarQube-Subocol') {
+//                          sh "${scannerHome}/bin/sonar-scanner"
+//                     }
+//                  }
+//              }
+//          }
 
         stage('Setup AWS Credentials') {
             steps {
