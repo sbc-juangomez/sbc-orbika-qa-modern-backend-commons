@@ -1,0 +1,1 @@
+Paquete encargado de almacenar recursos externos
