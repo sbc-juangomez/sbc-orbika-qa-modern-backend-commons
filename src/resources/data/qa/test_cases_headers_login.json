@@ -1,0 +1,195 @@
+[
+  {
+    "scenario": "session_id_no_exist",
+    "data": {
+      "headers": {
+        "transaction_id": "0199a035-d09f-774c-9dec-2e9c974ae315",
+        "email": "fernandadiaz869@gmail.com",
+        "token_recaptcha": "0cAFcWeA4jzvg0n8N_aOjZo3__osblSc"
+      }
+    },
+    "expects": {
+      "expect_status_code": 400,
+      "expect_details": "El campo session_id es obligatorio"
+    }
+  },
+  {
+    "scenario": "session_id_is_required",
+    "data": {
+      "headers": {
+        "sessions_id": "0199a035-a89a-720f-88c1-957777d6053b",
+        "transaction_id": "0199a035-d09f-774c-9dec-2e9c974ae315",
+        "email": "fernandadiaz869@gmail.com",
+        "token_recaptcha": "0cAFcWeA4jzvg0n8N_aOjZo3__osblSc"
+      }
+    },
+    "expects": {
+      "expect_status_code": 400,
+      "expect_details": "El campo session_id es obligatorio"
+    }
+  },
+  {
+    "scenario": "session_id_is_empty",
+    "data": {
+      "headers": {
+        "session_id": "",
+        "transaction_id": "550e8400-e29b-41d4-a716-446655440000",
+        "email": "fernandadiaz869@gmail.com",
+        "token_recaptcha": "0cAFcWeA4jzvg0n8N_aOjZo3__osblSc"
+      }
+    },
+    "expects": {
+      "expect_status_code": 400,
+      "expect_details": "El campo session_id es obligatorio"
+    }
+  },
+  {
+    "scenario": "session_id_uuid_valid",
+    "data": {
+      "headers": {
+        "session_id": "5c4a108f-522b-4f61-82da-3f7899c4cepe",
+        "transaction_id": "550e8400-e29b-41d4-a716-446655440000",
+        "email": "fernandadiaz869@gmail.com",
+        "token_recaptcha": "0cAFcWeA4jzvg0n8N_aOjZo3__osblSc"
+      }
+    },
+    "expects": {
+      "expect_status_code": 400,
+      "expect_details": "El campo session_id debe ser un UUID válido"
+    }
+  },
+  {
+    "scenario": "transaction_id_no_exist",
+    "data": {
+      "headers": {
+        "session_id": "0199a035-a89a-720f-88c1-957777d6053b",
+        "email": "fernandadiaz869@gmail.com",
+        "token_recaptcha": "0cAFcWeA4jzvg0n8N_aOjZo3__osblSc"
+      }
+    },
+    "expects": {
+      "expect_status_code": 400,
+      "expect_details": "El campo transaction_id es obligatorio"
+    }
+  },
+  {
+    "scenario": "transaction_id_is_empty",
+    "data": {
+      "headers": {
+        "session_id": "0199a035-a89a-720f-88c1-957777d6053b",
+        "transaction_id": "",
+        "email": "fernandadiaz869@gmail.com",
+        "token_recaptcha": "0cAFcWeA4jzvg0n8N_aOjZo3__osblSc"
+      }
+    },
+    "expects": {
+      "expect_status_code": 400,
+      "expect_details": "El campo transaction_id es obligatorio"
+    }
+  },
+  {
+    "scenario": "transaction_id_is_required",
+    "data": {
+      "headers": {
+        "session_id": "0199a035-a89a-720f-88c1-957777d6053b",
+        "transactions_id": "0199a035-d09f-774c-9dec-2e9c974ae315",
+        "email": "fernandadiaz869@gmail.com",
+        "token_recaptcha": "0cAFcWeA4jzvg0n8N_aOjZo3__osblSc"
+      }
+    },
+    "expects": {
+      "expect_status_code": 400,
+      "expect_details": "El campo transaction_id es obligatorio"
+    }
+  },
+  {
+    "scenario": "transaction_id_uuid_validate",
+    "data": {
+      "headers": {
+        "session_id": "0199a035-a89a-720f-88c1-957777d6053b",
+        "transaction_id": "5c4a108f-522b-4f61-82da-3f7899c4cepe",
+        "email": "fernandadiaz869@gmail.com",
+        "token_recaptcha": "0cAFcWeA4jzvg0n8N_aOjZo3__osblSc"
+      }
+    },
+    "expects": {
+      "expect_status_code": 400,
+      "expect_details": "El campo transaction_id debe ser un UUID válido"
+    }
+  },
+  {
+    "scenario": "email_no_exist",
+    "data": {
+      "headers": {
+        "session_id": "0199a035-a89a-720f-88c1-957777d6053b",
+        "transaction_id": "0199a035-d09f-774c-9dec-2e9c974ae315",
+        "token_recaptcha": "0cAFcWeA4jzvg0n8N_aOjZo3__osblSc"
+      }
+    },
+    "expects": {
+      "expect_status_code": 400,
+      "expect_details": "El campo email es obligatorio"
+    }
+  },
+  {
+    "scenario": "email_is_required",
+    "data": {
+      "headers": {
+        "session_id": "0199a035-a89a-720f-88c1-957777d6053b",
+        "transaction_id": "0199a035-d09f-774c-9dec-2e9c974ae315",
+        "emails": "fernandadiaz869@gmail.com",
+        "token_recaptcha": "0cAFcWeA4jzvg0n8N_aOjZo3__osblSc"
+      }
+    },
+    "expects": {
+      "expect_status_code": 400,
+      "expect_details": "El campo email es obligatorio"
+    }
+  },
+  {
+    "scenario": "email_is_empty",
+    "data": {
+      "headers": {
+        "session_id": "0199a035-a89a-720f-88c1-957777d6053b",
+        "transaction_id": "0199a035-d09f-774c-9dec-2e9c974ae315",
+        "email": "",
+        "token_recaptcha": "0cAFcWeA4jzvg0n8N_aOjZo3__osblSc"
+      }
+    },
+    "expects": {
+      "expect_status_code": 400,
+      "expect_details": "El campo email es obligatorio"
+    }
+  },
+  {
+    "scenario": "email_min_lenght",
+    "data": {
+      "headers": {
+        "session_id": "0199a035-a89a-720f-88c1-957777d6053b",
+        "transaction_id": "0199a035-d09f-774c-9dec-2e9c974ae315",
+        "email": "p@gm",
+        "token_recaptcha": "0cAFcWeA4jzvg0n8N_aOjZo3__osblSc"
+      }
+    },
+    "expects": {
+      "expect_status_code": 400,
+      "expect_details": "El campo email no puede tener menos de 5 caracteres"
+    }
+  },
+  {
+    "scenario": "email_max_lenght",
+    "data": {
+      "headers": {
+        "session_id": "0199a035-a89a-720f-88c1-957777d6053b",
+        "transaction_id": "0199a035-d09f-774c-9dec-2e9c974ae315",
+        "email": "correocorreocorreocorreocorreocorreocorreocorreocorreocorreocorreocorreocorreocorreocorreocorreocorreocorreocorreocorreocorreocorreocorreocorreocorreocorreocorreocorreocorreocorreocorreocorreocorreocorreocorreocorreocorreocorreocorreocorreocorreo@tests.com",
+        "token_recaptcha": "0cAFcWeA4jzvg0n8N_aOjZo3__osblSc"
+      }
+    },
+    "expects": {
+      "expect_status_code": 400,
+      "expect_details": "El campo email no puede tener más de 255 caracteres"
+    }
+  }
+]
+
