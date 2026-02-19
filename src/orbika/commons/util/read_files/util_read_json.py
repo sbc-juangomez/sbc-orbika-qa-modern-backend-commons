@@ -10,7 +10,7 @@ class UtilReadJson:
     @staticmethod
     def read_json_files(archivo):
         env = os.getenv('ENVIRONMENT')
-        base_path = os.path.join("src", "resources", "data", env)
+        base_path = os.path.join("resources", "data", env)
         json_path = os.path.join(base_path, archivo)
 
         logger.info(f"Intentando leer el archivo en la ruta: {json_path}")

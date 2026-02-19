@@ -39,7 +39,7 @@ class FactoryScenario:
             code = code_match.group(1) if code_match else None
             UtilRememberDataProcess.set_code(code)
             logger.debug(f"esto es code {code}")
-            base_module = f'src.resources.data.{environment}.{functionality}'
+            base_module = f'resources.data.{environment}.{functionality}'
             logger.debug(f"esto es base_module {base_module}")
             module_name = f"{base_module}.{module_part}"
             module = importlib.import_module(module_name)
