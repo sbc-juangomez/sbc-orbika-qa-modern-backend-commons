@@ -148,7 +148,7 @@ def test_12051_sec_login_user_service_user_not_in_database():
         logger.debug(f'Este es el status_code capturado en feature:::: {status_code}')
 
     with allure.step("2. Validación de respuesta del servicio"):
-        ExceptionsResponseValidator.validate_error_fields(response, 12051, 400, status_code,
+        ExceptionsResponseValidator.validate_error_fields(response, 12051, 422, status_code,
                                                           ERROR_DESCRIPTION,
                                                           "Error de autenticación. ¡Comunícate con servicio al cliente Subocol!", "sec-login-user-service")
 
