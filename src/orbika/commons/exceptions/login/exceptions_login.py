@@ -1,7 +1,7 @@
 import logging
 import re
 
-from src.orbika.commons.util.database.util_database_suite_db import UtilDatabaseSuiteDB
+from orbika.commons.util.database.util_database_suite_db import UtilDatabaseSuiteDB
 
 logger = logging.getLogger(__name__)
 

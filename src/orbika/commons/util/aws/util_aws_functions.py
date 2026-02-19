@@ -3,9 +3,9 @@ import time
 
 from botocore.exceptions import NoCredentialsError, ClientError
 
-from src.orbika.commons.conf.aws.conf_data_connection_aws import ConfDataConnectionAws
-from src.orbika.commons.util.aws.util_connections_aws import UtilConnectionsAws
-from src.orbika.commons.util.remember_data_process.util_remember_data_process import UtilRememberDataProcess
+from orbika.commons.conf.aws.conf_data_connection_aws import ConfDataConnectionAws
+from orbika.commons.util.aws.util_connections_aws import UtilConnectionsAws
+from orbika.commons.util.remember_data_process.util_remember_data_process import UtilRememberDataProcess
 
 logger = logging.getLogger(__name__)
 

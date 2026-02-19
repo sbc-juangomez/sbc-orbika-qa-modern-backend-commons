@@ -3,10 +3,10 @@ import os
 import time
 import uuid
 
-from src.orbika.commons.util.aws.util_aws_functions import UtilAwsFunctions
-from src.orbika.commons.util.constants.constants_integration_data_ia import EnumIntegrationDataIA
-from src.orbika.commons.util.remember_data_process.util_remember_data_process import UtilRememberDataProcess
-from src.orbika.commons.util.transversal_functions.util_get_data_list import UtilGetDataList
+from orbika.commons.util.aws.util_aws_functions import UtilAwsFunctions
+from orbika.commons.util.constants.constants_integration_data_ia import EnumIntegrationDataIA
+from orbika.commons.util.remember_data_process.util_remember_data_process import UtilRememberDataProcess
+from orbika.commons.util.transversal_functions.util_get_data_list import UtilGetDataList
 
 logger = logging.getLogger(__name__)
 

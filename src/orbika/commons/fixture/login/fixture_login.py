@@ -1,11 +1,9 @@
 import logging
 import os
 
-
-
-from src.orbika.commons.endpoints.login.endpoints_post_login import PostLogin
-from src.orbika.commons.util.aws.util_aws_functions import UtilAwsFunctions
-from src.orbika.commons.util.remember_data_process.util_remember_data_process import UtilRememberDataProcess
+from orbika.commons.endpoints.login.endpoints_post_login import PostLogin
+from orbika.commons.util.aws.util_aws_functions import UtilAwsFunctions
+from orbika.commons.util.remember_data_process.util_remember_data_process import UtilRememberDataProcess
 
 logger = logging.getLogger(__name__)
 

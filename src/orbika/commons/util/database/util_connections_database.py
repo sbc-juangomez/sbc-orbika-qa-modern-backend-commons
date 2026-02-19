@@ -3,7 +3,7 @@ import logging
 import psycopg2
 from psycopg2 import OperationalError
 
-from src.orbika.commons.conf.database.conf_data_connection import ConfDataConnection
+from orbika.commons.conf.database.conf_data_connection import ConfDataConnection
 
 logger = logging.getLogger(__name__)
 

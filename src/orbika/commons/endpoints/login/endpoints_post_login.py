@@ -2,14 +2,14 @@ import logging
 
 import requests
 
-from src.orbika.commons.conf.login.conf_login import ConfLogin
-from src.orbika.commons.endpoints.headers_validate.endpoints_headers_validate import EndpointsHeadersValidate
-from src.orbika.commons.factories.factory_scenario import FactoryScenario
-from src.orbika.commons.models.email.models_email_validate import ModelsEmailValidate
-from src.orbika.commons.tasks.login.tasks_prepare_data_login import PrepareDataValidateLoginService
-from src.orbika.commons.util.read_files.util_read_json import UtilReadJson
-from src.orbika.commons.util.remember_data_process.util_remember_data_process import UtilRememberDataProcess
-from src.orbika.commons.util.transversal_functions.util_data_generator import UtilDataGenerator
+from orbika.commons.conf.login.conf_login import ConfLogin
+from orbika.commons.endpoints.headers_validate.endpoints_headers_validate import EndpointsHeadersValidate
+from orbika.commons.factories.factory_scenario import FactoryScenario
+from orbika.commons.models.email.models_email_validate import ModelsEmailValidate
+from orbika.commons.tasks.login.tasks_prepare_data_login import PrepareDataValidateLoginService
+from orbika.commons.util.read_files.util_read_json import UtilReadJson
+from orbika.commons.util.remember_data_process.util_remember_data_process import UtilRememberDataProcess
+from orbika.commons.util.transversal_functions.util_data_generator import UtilDataGenerator
 
 logger = logging.getLogger(__name__)
 

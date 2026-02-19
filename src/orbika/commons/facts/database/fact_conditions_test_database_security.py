@@ -1,9 +1,9 @@
 import logging
 import os
 
-from src.orbika.commons.util.database.util_database_functions import UtilDatabaseFunctions
-from src.orbika.commons.util.database.util_database_functions_security import UtilDatabaseFunctionsSecurity
-from src.orbika.commons.util.database.util_database_suite_db_serivice_order import UtilDatabaseSuiteDBServiceOrder
+from orbika.commons.util.database.util_database_functions import UtilDatabaseFunctions
+from orbika.commons.util.database.util_database_functions_security import UtilDatabaseFunctionsSecurity
+from orbika.commons.util.database.util_database_suite_db_serivice_order import UtilDatabaseSuiteDBServiceOrder
 
 logger = logging.getLogger(__name__)
 

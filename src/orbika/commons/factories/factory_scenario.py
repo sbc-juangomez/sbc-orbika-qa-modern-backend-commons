@@ -4,7 +4,7 @@ import logging
 import os
 import re
 
-from src.orbika.commons.util.remember_data_process.util_remember_data_process import UtilRememberDataProcess
+from orbika.commons.util.remember_data_process.util_remember_data_process import UtilRememberDataProcess
 
 logger = logging.getLogger(__name__)
 

@@ -2,9 +2,9 @@ import logging
 
 import requests
 
-from src.orbika.commons.models.headers.models_headers_validate import ModelsHeadersValidate
-from src.orbika.commons.util.read_files.util_read_json import UtilReadJson
-from src.orbika.commons.util.transversal_functions.util_data_generator import UtilDataGenerator
+from orbika.commons.models.headers.models_headers_validate import ModelsHeadersValidate
+from orbika.commons.util.read_files.util_read_json import UtilReadJson
+from orbika.commons.util.transversal_functions.util_data_generator import UtilDataGenerator
 
 logger = logging.getLogger(__name__)
 

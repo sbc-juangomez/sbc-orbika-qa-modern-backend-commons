@@ -1,9 +1,9 @@
 import logging
 import os
 
-from src.orbika.commons.factories.factory_scenario import FactoryScenario
-from src.orbika.commons.util.remember_data_process.util_remember_data_process import UtilRememberDataProcess
-from src.orbika.commons.util.transversal_functions.util_data_generator import UtilDataGenerator
+from orbika.commons.factories.factory_scenario import FactoryScenario
+from orbika.commons.util.remember_data_process.util_remember_data_process import UtilRememberDataProcess
+from orbika.commons.util.transversal_functions.util_data_generator import UtilDataGenerator
 
 logger = logging.getLogger(__name__)
 ENVIRONMENT = os.getenv('ENVIRONMENT')

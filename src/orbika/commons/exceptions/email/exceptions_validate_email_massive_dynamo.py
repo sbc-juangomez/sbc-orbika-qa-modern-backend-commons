@@ -1,7 +1,7 @@
 import logging
 
-from src.orbika.commons.util.remember_data_process.util_remember_data_process import UtilRememberDataProcess
-from src.orbika.commons.util.tracking.util_verify_register_event import UtilVerifyRegisterEvent
+from orbika.commons.util.remember_data_process.util_remember_data_process import UtilRememberDataProcess
+from orbika.commons.util.tracking.util_verify_register_event import UtilVerifyRegisterEvent
 
 logger = logging.getLogger(__name__)
 

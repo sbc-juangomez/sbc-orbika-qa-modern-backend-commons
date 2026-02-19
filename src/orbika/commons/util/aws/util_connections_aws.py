@@ -1,9 +1,9 @@
 import logging
 
 import boto3
-
 from botocore.exceptions import BotoCoreError, NoCredentialsError, PartialCredentialsError
-from src.orbika.commons.conf.aws.conf_data_connection_aws import ConfDataConnectionAws
+
+from orbika.commons.conf.aws.conf_data_connection_aws import ConfDataConnectionAws
 
 logger = logging.getLogger(__name__)
 

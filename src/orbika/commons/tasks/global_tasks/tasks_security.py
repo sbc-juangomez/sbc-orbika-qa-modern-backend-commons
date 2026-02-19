@@ -1,8 +1,8 @@
 import logging
 import os
 
-from src.orbika.commons.factories.factory_scenario import FactoryScenario
-from src.orbika.commons.util.database.util_database_functions import UtilDatabaseFunctions
+from orbika.commons.factories.factory_scenario import FactoryScenario
+from orbika.commons.util.database.util_database_functions import UtilDatabaseFunctions
 
 logger = logging.getLogger(__name__)
 

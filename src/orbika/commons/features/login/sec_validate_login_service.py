@@ -3,16 +3,16 @@ import logging
 import allure
 import pytest
 
-from src.orbika.commons.endpoints.login.endpoints_post_login import PostLogin
-from src.orbika.commons.exceptions.email.exceptions_validate_email_massive_dynamo import ValidateEmailMassiveDynamo
-from src.orbika.commons.exceptions.headers.exceptions_validate_headers_massive import ExceptionsValidateHeadersMassive
-from src.orbika.commons.exceptions.login.exceptions_login import ExceptionsLogin
-from src.orbika.commons.exceptions.response_validator.exceptions_response_validator import ExceptionsResponseValidator
-from src.orbika.commons.facts.aws.fact_conditions_test_aws import FactConditionsTestsAws
-from src.orbika.commons.facts.database.fact_conditions_test_database_security import FactConditionsTestDatabaseSecurity
-from src.orbika.commons.util.aws.util_aws_functions import UtilAwsFunctions
-from src.orbika.commons.util.remember_data_process.util_remember_data_process import UtilRememberDataProcess
-from src.orbika.commons.util.tracking.util_verify_register_event import UtilVerifyRegisterEvent
+from orbika.commons.endpoints.login.endpoints_post_login import PostLogin
+from orbika.commons.exceptions.email.exceptions_validate_email_massive_dynamo import ValidateEmailMassiveDynamo
+from orbika.commons.exceptions.headers.exceptions_validate_headers_massive import ExceptionsValidateHeadersMassive
+from orbika.commons.exceptions.login.exceptions_login import ExceptionsLogin
+from orbika.commons.exceptions.response_validator.exceptions_response_validator import ExceptionsResponseValidator
+from orbika.commons.facts.aws.fact_conditions_test_aws import FactConditionsTestsAws
+from orbika.commons.facts.database.fact_conditions_test_database_security import FactConditionsTestDatabaseSecurity
+from orbika.commons.util.aws.util_aws_functions import UtilAwsFunctions
+from orbika.commons.util.remember_data_process.util_remember_data_process import UtilRememberDataProcess
+from orbika.commons.util.tracking.util_verify_register_event import UtilVerifyRegisterEvent
 
 ERROR_DYNAMO = 'La validación de datos entre DynamoDB y el body falló.'
 EXPECTED_ORIGIN = "sec-validate-login-service"

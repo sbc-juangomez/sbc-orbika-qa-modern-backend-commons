@@ -1,8 +1,8 @@
 import logging
 import os
 
-from src.orbika.commons.conf.aws.conf_data_connection_aws import ConfDataConnectionAws
-from src.orbika.commons.util.aws.util_aws_functions import UtilAwsFunctions
+from orbika.commons.conf.aws.conf_data_connection_aws import ConfDataConnectionAws
+from orbika.commons.util.aws.util_aws_functions import UtilAwsFunctions
 
 logger = logging.getLogger(__name__)
 

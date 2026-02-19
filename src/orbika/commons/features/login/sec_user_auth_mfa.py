@@ -1,19 +1,17 @@
-import os
-import sys
+import logging
 
 import allure
 import pytest
-import logging
+from orbika.commons.fixture.login.fixture_login import FixtureLogin
 
-from src.orbika.commons.endpoints.login.endpoints_post_login import PostLogin
-from src.orbika.commons.exceptions.email.exceptions_validate_email_massive_dynamo import ValidateEmailMassiveDynamo
-from src.orbika.commons.exceptions.headers.exceptions_validate_headers_massive import ExceptionsValidateHeadersMassive
-from src.orbika.commons.exceptions.login.exceptions_login import ExceptionsLogin
-from src.orbika.commons.exceptions.response_validator.exceptions_response_validator import ExceptionsResponseValidator
-from src.orbika.commons.fixture.login.fixture_login import FixtureLogin
-from src.orbika.commons.tasks.global_tasks.tasks_security import TasksSecurity
-from src.orbika.commons.util.remember_data_process.util_remember_data_process import UtilRememberDataProcess
-from src.orbika.commons.util.tracking.util_verify_register_event import UtilVerifyRegisterEvent
+from orbika.commons.endpoints.login.endpoints_post_login import PostLogin
+from orbika.commons.exceptions.email.exceptions_validate_email_massive_dynamo import ValidateEmailMassiveDynamo
+from orbika.commons.exceptions.headers.exceptions_validate_headers_massive import ExceptionsValidateHeadersMassive
+from orbika.commons.exceptions.login.exceptions_login import ExceptionsLogin
+from orbika.commons.exceptions.response_validator.exceptions_response_validator import ExceptionsResponseValidator
+from orbika.commons.tasks.global_tasks.tasks_security import TasksSecurity
+from orbika.commons.util.remember_data_process.util_remember_data_process import UtilRememberDataProcess
+from orbika.commons.util.tracking.util_verify_register_event import UtilVerifyRegisterEvent
 
 ERROR_DYNAMO = 'La validación de datos entre DynamoDB y el body falló.'
 EXPECTED_ORIGIN = "sec-user-auth-mfa"

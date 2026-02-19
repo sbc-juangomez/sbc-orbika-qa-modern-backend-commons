@@ -1,6 +1,6 @@
 import logging
 
-from src.orbika.commons.util.database.util_connections_database import UtilConnectionsDatabase
+from orbika.commons.util.database.util_connections_database import UtilConnectionsDatabase
 
 logger = logging.getLogger(__name__)
 

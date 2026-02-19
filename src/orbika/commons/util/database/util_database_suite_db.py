@@ -3,8 +3,8 @@ import logging
 import psycopg2
 import psycopg2.extras
 
-from src.orbika.commons.util.database.util_connections_database import UtilConnectionsDatabase
-from src.orbika.commons.util.remember_data_process.util_remember_data_process import UtilRememberDataProcess
+from orbika.commons.util.database.util_connections_database import UtilConnectionsDatabase
+from orbika.commons.util.remember_data_process.util_remember_data_process import UtilRememberDataProcess
 
 logger = logging.getLogger(__name__)
 

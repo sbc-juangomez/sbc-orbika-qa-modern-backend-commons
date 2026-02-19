@@ -3,12 +3,12 @@ import logging
 import allure
 import pytest
 
-from src.orbika.commons.endpoints.login.endpoints_post_login import PostLogin
-from src.orbika.commons.exceptions.response_validator.exceptions_response_validator import ExceptionsResponseValidator
-from src.orbika.commons.util.aws.util_aws_functions import UtilAwsFunctions
-from src.orbika.commons.util.database.util_database_suite_db import UtilDatabaseSuiteDB
-from src.orbika.commons.util.remember_data_process.util_remember_data_process import UtilRememberDataProcess
-from src.orbika.commons.util.tracking.util_verify_register_event import UtilVerifyRegisterEvent
+from orbika.commons.endpoints.login.endpoints_post_login import PostLogin
+from orbika.commons.exceptions.response_validator.exceptions_response_validator import ExceptionsResponseValidator
+from orbika.commons.util.aws.util_aws_functions import UtilAwsFunctions
+from orbika.commons.util.database.util_database_suite_db import UtilDatabaseSuiteDB
+from orbika.commons.util.remember_data_process.util_remember_data_process import UtilRememberDataProcess
+from orbika.commons.util.tracking.util_verify_register_event import UtilVerifyRegisterEvent
 
 ERROR_DYNAMO = 'La validación de datos entre DynamoDB y el body falló.'
 EXPECTED_ORIGIN = "sec-get-permissions"
