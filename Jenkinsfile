@@ -81,6 +81,7 @@ pipeline {
                     . venv/bin/activate
                     pip install pytest allure-pytest requests psycopg2-binary boto3 pytest-ordering pytz
                     pip install pyotp
+                    pip install -e .
                 '''
             }
         }
