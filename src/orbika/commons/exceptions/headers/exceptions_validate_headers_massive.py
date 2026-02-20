@@ -3,9 +3,9 @@ import os
 
 import allure
 
-from orbika.commons.exceptions.response_validator.exceptions_response_validator import ExceptionsResponseValidator
-from orbika.commons.util.remember_data_process.util_remember_data_process import UtilRememberDataProcess
-from orbika.commons.util.tracking.util_verify_register_event import UtilVerifyRegisterEvent
+from src.orbika.commons.exceptions.response_validator.exceptions_response_validator import ExceptionsResponseValidator
+from src.orbika.commons.util.remember_data_process.util_remember_data_process import UtilRememberDataProcess
+from src.orbika.commons.util.tracking.util_verify_register_event import UtilVerifyRegisterEvent
 
 logger = logging.getLogger(__name__)
 
@@ -60,6 +60,7 @@ class ExceptionsValidateHeadersMassive:
             session_id = response.get('session_id', False)
             email = response.get('email', {})
             UtilRememberDataProcess.set_session_id_header(session_id)
+            UtilRememberDataProcess.set_session_id(session_id)
             UtilRememberDataProcess.set_email_header(email)
             data_response = response.get('response')
             UtilRememberDataProcess.set_response(data_response)
