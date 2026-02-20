@@ -13,6 +13,10 @@ class UtilReadJson:
         base_path = os.path.join("resources", "data", env)
         json_path = os.path.join(base_path, archivo)
 
+        if not os.path.exists(json_path):
+            src_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..', '..'))
+            json_path = os.path.join(src_dir, "resources", "data", env, archivo)
+
         logger.info(f"Intentando leer el archivo en la ruta: {json_path}")
 
         if not os.path.exists(json_path):
